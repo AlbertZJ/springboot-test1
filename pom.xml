@@ -59,7 +59,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>dockerspringboot</imageName><!--[a-z 0-9] 不然docker:build会报错-->
+                    <imageName>springboottest1</imageName><!--[a-z 0-9] 不然docker:build会报错-->
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
@@ -73,5 +73,4 @@
             <!-- Docker maven plugin end -->
         </plugins>
     </build>
-
 </project>
