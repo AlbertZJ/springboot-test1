@@ -2,9 +2,7 @@ version: '3.1'
 services:
   my_test:
     restart: always
-    build:
-      context: ./my_test
-      dockerfile: Dockerfile
+    build: .
     image: my_test:1.0
     container_name: my_test
     ports:
